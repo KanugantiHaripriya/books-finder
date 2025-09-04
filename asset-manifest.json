@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/books-finder/static/css/main.219f7631.css",
+    "main.js": "/books-finder/static/js/main.79c52470.js",
+    "static/js/453.be6a71ac.chunk.js": "/books-finder/static/js/453.be6a71ac.chunk.js",
+    "static/media/image.png": "/books-finder/static/media/image.69cc07b0fc7470627bfc.png",
+    "index.html": "/books-finder/index.html",
+    "main.219f7631.css.map": "/books-finder/static/css/main.219f7631.css.map",
+    "main.79c52470.js.map": "/books-finder/static/js/main.79c52470.js.map",
+    "453.be6a71ac.chunk.js.map": "/books-finder/static/js/453.be6a71ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.219f7631.css",
+    "static/js/main.79c52470.js"
+  ]
+}
