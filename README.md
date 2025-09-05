@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Books Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and modern `React` web application to search and explore books using the `Open Library API`. Users can search books by title, browse results as cards, view detailed information, and navigate using pagination.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+**Book Finder** allows anyone to quickly find books by typing titles in the search box. The app fetches matching book data from the Open Library API and displays results in a clean card layout with cover images, titles, authors, and publication years. Clicking a card opens a modal with more detailed information. The app supports pagination to browse through multiple pages of results.
 
-### `npm start`
+Designed with a responsive and pleasing UI, featuring a centered container, background image, and smooth modal transitions. The project is perfect for book lovers and developers learning React and API integration.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Search for books by title
+- View results in a responsive card grid
+- Click cards to see detailed book info in modal popup
+- Navigate pages with Previous and Next buttons
+- Clean, modern UI with background image and smooth animations
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- `Node.js` (version 12 or above recommended)
+- `npm` (comes with Node.js)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.  Clone the repository:
+    ```text
+    git clone [https://github.com/your-username/book-finder.git](https://github.com/your-username/book-finder.git)
+    ```
+2.  Navigate into the project folder:
+    ```text
+    cd book-finder
+    ```
+3.  Install dependencies:
+    ```text
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Running the App Locally
 
-### `npm run eject`
+1.  Start the development server:
+    ```text
+    npm start
+    ```
+2.  Open `http://localhost:3000` in your browser to see the app running.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1.  Type a book title in the search box.
+2.  Browse the list of books displayed as cards.
+3.  Click on any book card to open a detailed view.
+4.  Use the “colse” button or click outside the modal to close details.
+5.  Use “Previous” and “Next” buttons to navigate pages of results.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The app can easily be deployed to GitHub Pages, Netlify, Vercel, or any static site hosting platform.
 
-## Learn More
+### Deploying on GitHub Pages
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1.  Install the `gh-pages` package:
+    ```text
+    npm install --save gh-pages
+    ```
+2.  In `package.json`, add:
+    ```json
+    "homepage": "[https://your-username.github.io/book-finder](https://your-username.github.io/book-finder)",
+    "scripts": {
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
+    }
+    ```
+3.  Deploy with:
+    ```text
+    npm run deploy
+    ```
+4.  Visit the deployment URL to see your live app.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
 
-### Code Splitting
+- React
+- JavaScript (ES6+)
+- Open Library API
+- CSS (Flexbox and custom styles)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Folder Structure
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```text
+book-finder/
+├── public/
+├── src/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── ...
+├── package.json
+└── README.md
